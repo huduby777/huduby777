@@ -1,0 +1,295 @@
+/* 0. 색상: C 시안의 에메랄드 포인트와 따뜻한 아이보리 */
+:root {
+  --accent: #158464;
+  --accent-dark: #0b674e;
+  --accent-soft: #e7f2eb;
+  --ink: #252b28;
+  --muted: #626a64;
+  --paper: #f8f4ed;
+  --wash: #f2eee5;
+  --card: #fffcf7;
+  --line: #d8d2c8;
+  --dark: #25312d;
+  --sidebar-width: clamp(360px, 22vw, 420px);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", Arial, sans-serif;
+  line-height: 1.7;
+}
+
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.wrap { width: min(100% - 35px, 980px); margin-left: 110px; margin-right: auto; padding: 0; }
+section { scroll-margin-top: 20px; }
+
+/* 1. 왼쪽 고정 메뉴 */
+.site-header {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 20;
+  width: var(--sidebar-width);
+  background: var(--paper);
+  border-right: 1px solid var(--line);
+}
+.nav { 
+  height: 100%; 
+  padding: 34px 24px 34px 230px; 
+  display: flex; 
+  flex-direction: column; }
+
+.logo { display: flex; flex-direction: column; gap: 16px; }
+.logo strong { font-size: 1.2rem; font-weight: 750; letter-spacing: -.03em; }
+.logo span { color: var(--muted); font-size: .78rem; line-height: 1.5; }
+.nav-links { display: flex; flex-direction: column; gap: 8px; margin-top: 58px; }
+.nav-links a { display: flex; gap: 18px; align-items: baseline; padding: 7px 0; font-size: 1.0rem; }
+.nav-links a:hover, .nav-links a.is-active { color: var(--accent-dark); font-weight: 700; }
+.nav-links small { width: 18px; color: var(--muted); font-size: .94rem; }
+.menu-toggle { display: none; }
+main, .footer { margin-left: var(--sidebar-width); }
+
+/* 2. 첫 화면 소개 */
+.hero {
+  background-color: var(--paper);
+  background-image: radial-gradient(circle, rgba(107, 121, 111, .07) .7px, transparent 1px);
+  background-size: 32px 32px;
+  border-bottom: 1px solid var(--line);
+  padding: 108px 0 95px;
+}
+.hero-copy { max-width: 760px; }
+.eyebrow, .section-label {
+  margin: 0;
+  color: var(--accent-dark);
+  font-size: .76rem;
+  letter-spacing: .13em;
+  font-weight: 800;
+}
+.hero h1 {
+  font-size: clamp(2.1rem, 5vw, 4.1rem);
+  line-height: 1.18;
+  letter-spacing: -.07em;
+  word-break: keep-all;
+  margin: 24px 0;
+}
+.highlight { color: var(--accent-dark); }
+.hero-description { max-width: 650px; color: var(--muted); font-size: 1.03rem; word-break: keep-all; }
+.hero-buttons { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 34px 0 27px; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: .9rem;
+  font-weight: 750;
+}
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-secondary { border: 1px solid var(--line); background: var(--card); }
+.hero-tags, .pill-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.hero-tags span, .pill-list span {
+  padding: 4px 10px;
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+  border-radius: 5px;
+  font-size: .76rem;
+  font-weight: 700;
+}
+
+/* 3. 경력 요약 띠 */
+.numbers { padding: 30px 0; background: var(--dark); color: #fff; border-bottom: 1px solid var(--line); }
+.number-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center; }
+.number-grid div { display: grid; }
+.number-grid strong { font-size: 1.8rem; letter-spacing: -.04em; }
+.number-grid span { color: #d3dfd6; font-size: .78rem; }
+
+/* 4. 섹션 공통 구성: 각 영역을 가는 선으로 구분 */
+.section { padding: 82px 0 90px; border-bottom: 1px solid var(--line); }
+.section-tint { background: var(--wash); }
+.section h2, .contact h2 {
+  margin: 11px 0;
+  font-size: clamp(1.8rem, 3vw, 2.45rem);
+  line-height: 1.3;
+  letter-spacing: -.05em;
+  word-break: keep-all;
+}
+.section-lead { margin: 0 0 34px; color: var(--muted); word-break: keep-all; }
+.philosophy-grid, .skill-grid, .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; border: 1px solid var(--line); background: var(--line); }
+.soft-card, .skill-card, .career-card, .resource-card, .project-card { background: var(--card); padding: 25px; }
+.soft-card h3, .skill-card h3, .career-card h3, .resource-card h3 { margin: 10px 0 7px; font-size: 1.08rem; letter-spacing: -.03em; }
+.soft-card p, .career-card p, .resource-card p { margin: 0; color: var(--muted); font-size: .9rem; }
+.card-number, .career-card > span, .resource-card > span { color: var(--accent-dark); font-size: .82rem; font-weight: 800; }
+.skill-desc {
+    color: #666666; 
+    font-size: 0.9rem; 
+    margin-top: -10px; 
+    margin-bottom: 15px; 
+    word-break: keep-all; /* 단어 단위로 줄바꿈되도록 설정 */
+}
+.skill-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.skill-card:hover {
+  transform: translateY(-8px) translateX(-8px); /* 카드가 위로 8px 이동 */
+  box-shadow: 0 10px 20px rgba(37, 36, 36, 0.397); /* 그림자를 진하고 넓게 확산 */
+}
+
+.skill-card:hover .skill-icon {
+  transform: scale(1.5); /* 아이콘이 살짝 커지는 효과 */
+  transition: transform 0.3s ease;
+}
+/* 강의 철학: 가로 4단 타임라인 (아이콘 원 + 점선 연결) */
+.philosophy-grid {
+  --icon-size: 150px;
+  --gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--gap);
+  border: 0;
+  background: none;
+  margin-top: 8px;
+}
+.soft-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  background: none;
+}
+.soft-card img.philosophy-icon {
+  position: static;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  padding: 18px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  object-fit: contain;
+}
+.soft-card .card-number { margin-top: 22px; font-size: .72rem; letter-spacing: .08em; }
+.soft-card h3 { margin: 6px 0 8px; font-size: 1.15rem; word-break: keep-all; }
+.soft-card p { font-size: .82rem; word-break: keep-all; }
+
+/* 카드 사이 점선 + 가운데 점 (마지막 카드 제외) */
+.soft-card:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--icon-size) / 2);
+  left: calc(50% + var(--icon-size) / 2 + 12px);
+  width: calc(100% + var(--gap) - var(--icon-size) - 24px);
+  border-top: 2px dotted #b9c4bc;
+}
+.soft-card:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: calc(var(--icon-size) / 2 - 5px);
+  left: calc(100% + var(--gap) / 2 - 5px);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent-dark);
+}
+
+/* 5. 강의 분야 */
+.skill-card { min-height: 190px; }
+.skill-icon { display: inline-block; color: var(--accent); font-size: 1.35rem; font-weight: 700; }
+.skill-card h3 { margin: 8px 0 17px; }
+
+/* 6. 프로젝트 */
+.project-card { display: flex; flex-direction: column; min-height: 210px; text-align: left; border: 0; color: var(--ink); }
+.project-card:hover { background: #f4f5ec; }
+.project-top { color: var(--accent-dark); font-size: .72rem; font-weight: 800; letter-spacing: .1em; }
+.project-card strong { margin: 15px 0 4px; font-size: 1.28rem; }
+.project-card > span:nth-of-type(2) { color: var(--muted); font-size: .9rem; }
+.project-tech { margin-top: 14px; color: var(--accent-dark); font-size: .76rem; }
+.project-more { margin-top: auto; padding-top: 14px; color: var(--accent-dark); font-size: .8rem; font-weight: 800; }
+
+/* 7. 강의 경력과 자료실 */
+.career-grid, .resource-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; border: 1px solid var(--line); background: var(--line); }
+.career-card .pill-list { margin-top: 20px; }
+.career-card .pill-list span { font-size: .7rem; }
+.background { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--line); }
+.background span { display: block; color: var(--accent-dark); font-size: .72rem; font-weight: 800; letter-spacing: .1em; }
+.background strong { display: block; margin: 6px 0; }
+.background p { margin: 0; color: var(--muted); font-size: .87rem; }
+.resource-card { min-height: 160px; }
+.resource-card small { display: block; margin-top: 18px; color: var(--accent-dark); font-weight: 700; }
+
+/* 8. 문의와 푸터 */
+.contact { padding: 40px 0; background: var(--dark); color: #fff; border-bottom: 1px solid var(--line); }
+.contact .section-label { color: #93d6b2; }
+.contact p:not(.section-label) { margin-bottom: 28px; color: #d3dfd6; }
+.footer { padding: 20px 0; color: var(--muted); font-size: .78rem; }
+.footer .wrap { display: flex; justify-content: space-between; gap: 12px; }
+
+/* 9. 오른쪽 아래 고정 TOP 버튼 */
+.back-to-top {
+  position: fixed;
+  z-index: 15;
+  right: 24px;
+  bottom: 24px;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--card);
+  color: var(--accent-dark);
+  box-shadow: 0 6px 22px rgba(25, 40, 31, .12);
+  font-size: .8rem;
+  font-weight: 800;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity .2s, transform .2s, visibility .2s;
+}
+.back-to-top.is-visible { opacity: 1; visibility: visible; transform: translateY(0); }
+
+/* 10. 프로젝트 상세 팝업 */
+.project-dialog { width: min(540px, calc(100% - 28px)); max-height: 80vh; overflow: auto; padding: 32px; border: 1px solid var(--line); background: var(--card); color: var(--ink); }
+.project-dialog::backdrop { background: rgba(15, 34, 26, .58); }
+.project-dialog h2 { letter-spacing: -.05em; }
+.project-dialog h3 { margin: 21px 0 5px; font-size: .98rem; }
+.project-dialog p:not(.section-label) { margin: 0; color: var(--muted); font-size: .91rem; }
+.dialog-close { position: absolute; top: 8px; right: 16px; border: 0; background: none; color: var(--ink); font-size: 2rem; }
+
+/* 태블릿·모바일: 고정된 왼쪽 메뉴를 위쪽 메뉴로 전환 */
+@media (max-width: 900px) {
+  .site-header {
+    position: relative;
+    width: 100%;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  main,
+  .footer {
+    margin-left: 0;
+  }
+
+  .nav {
+    height: auto;
+    padding: 20px 24px;
+  }
+
+  .wrap {
+    width: min(100% - 48px, 1080px);
+    margin-inline: auto;
+    padding: 0;
+  }
+}
+
+/* 강의 철학 반응형: 태블릿 2단, 모바일 1단 (연결선 숨김) */
+@media (max-width: 900px) {
+  .philosophy-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 40px; }
+  .soft-card::before, .soft-card::after { display: none !important; }
+}
+@media (max-width: 520px) {
+  .philosophy-grid { grid-template-columns: 1fr; }
+}

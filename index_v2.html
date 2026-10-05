@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="이미경 소프트웨어 강사의 AI·데이터 분석·피지컬 컴퓨팅 교육 포트폴리오">
   <title>이미경 | 만들면서 배우는 소프트웨어</title>
-  <link rel="stylesheet" href="./lib/styles.css">
-  <script src="./lib/script.js" defer></script>
+  <link rel="stylesheet" href="./lib/styles_v2.css">
+  <script src="./lib/script_v2.js" defer></script>
 </head>
 <body>
   <!-- 0. 왼쪽 메뉴 시작 -->
@@ -16,16 +16,17 @@
         <strong>이미경 · Portfolio</strong>
         <span>Software educator<br>&amp; AI learner</span>
       </a>
+
       <button class="menu-toggle" type="button" aria-label="메뉴 열기"
               aria-expanded="false" aria-controls="nav-links">☰</button>
 
       <div class="nav-links" id="nav-links">
-        <a href="#philosophy"><small>01</small>PHILOSOPHY</a>
+        <a href="#philosophy"><small>01</small>TEACHING PHILOSOPHY</a>
         <a href="#skills"><small>02</small>WHAT I TEACH</a>
         <a href="#projects"><small>03</small>MY TINY PROJECTS</a>
         <a href="#career"><small>04</small>TEACHING RECORD</a>
-        <a href="#resources"><small>05</small>CLASS RESOURCES</a>
-        <a href="#contact"><small>06</small>CONTACT</a>
+        <a href="#resources"><small>05</small>자료실</a>
+        <a href="#contact"><small>06</small>강의 문의</a>
       </div>
     </nav>
   </header>
@@ -52,7 +53,7 @@
     <!-- 1. 첫 화면 소개 끝 -->
 
     <!-- 2. 경력 요약 숫자 시작 -->
-    <section class="numbers">
+    <section class="numbers" aria-label="경력 요약">
       <div class="wrap number-grid">
         <div><strong>5년</strong><span>소프트웨어 강의 경력</span></div>
         <div><strong>4년</strong><span>웹 개발 실무 경력</span></div>
@@ -157,8 +158,6 @@
     <!-- 4. 강의 분야 끝 -->
 
     <!-- 5. 프로젝트 시작 -->
-    
-    
     <section class="section" id="projects">
       <div class="wrap">
         <p class="section-label">MY TINY PROJECTS</p>
@@ -176,21 +175,21 @@
           <!-- 5-2. 오른쪽 미리보기 패널 시작 (프로젝트마다 1개) -->
           <div class="project-preview">
             <div class="project-pane" data-pane="maeum">
-              <span class="project-top">01 · PYTHON </span>
+              <span class="project-top">01 · RASPBERRY PI</span>
               <strong>마음 봄</strong>
               <p class="project-summary">감정과 일상을 돌아보는 웹앱</p>
               <!-- 화면 캡처가 준비되면 아래 div 전체를 <img class="project-shot" src="img/파일명.png" alt="마음 봄 화면"> 로 바꾸세요. -->
-              <img class="project-shot" src="./img/mind_small.png" alt="마음 봄 화면">
-              <div class="pill-list"><span>Python</span><span>Streamlit</span><span>LoRA</span><span>Apps Script</span></div>
+              <div class="project-shot" aria-hidden="true">♡</div>
+              <div class="pill-list"><span>Python</span><span>Raspberry Pi</span><span>Web</span></div>
               <button class="project-more" type="button" data-project="maeum" aria-haspopup="dialog">자세히 보기 ↗</button>
             </div>
             <div class="project-pane" data-pane="news" hidden>
               <span class="project-top">02 · AI LITERACY</span>
               <strong>AI 뉴스 큐레이션</strong>
-              <p class="project-summary">AI 타임즈 최신 뉴스 Brifing 웹앱</p>
+              <p class="project-summary">뉴스를 카드로 살펴보는 웹앱</p>
               <!-- 화면 캡처가 준비되면 아래 div 전체를 <img class="project-shot" src="img/파일명.png" alt="AI 뉴스 큐레이션 화면"> 로 바꾸세요. -->
-              <img class="project-shot" src="./img/news_small.png" alt="마음 봄 화면">
-              <div class="pill-list"><span>Python</span><span>Streamlit</span><span>Gemini API</span></div>
+              <div class="project-shot" aria-hidden="true">▤</div>
+              <div class="pill-list"><span>Python</span><span>Streamlit</span><span>Templates</span></div>
               <button class="project-more" type="button" data-project="news" aria-haspopup="dialog">자세히 보기 ↗</button>
             </div>
             <div class="project-pane" data-pane="hangman" hidden>
@@ -199,11 +198,11 @@
               <p class="project-summary">직접 쓴 글자로 진행하는 단어 게임</p>
               <!-- 화면 캡처가 준비되면 아래 div 전체를 <img class="project-shot" src="img/파일명.png" alt="손글씨 행맨 화면"> 로 바꾸세요. -->
               <div class="project-shot" aria-hidden="true">✎</div>
-              <div class="pill-list"><span>Python</span><span>Streamlit</span><span>EMNIST</span></div>
+              <div class="pill-list"><span>Python</span><span>Streamlit</span><span>Canvas</span></div>
               <button class="project-more" type="button" data-project="hangman" aria-haspopup="dialog">자세히 보기 ↗</button>
             </div>
             <div class="project-pane" data-pane="iot" hidden>
-              <span class="project-top">04 · ARDUINO IOT</span>
+              <span class="project-top">04 · IOT</span>
               <strong>IoT 대시보드</strong>
               <p class="project-summary">센서값 확인과 LED·모터 제어 실습</p>
               <!-- 화면 캡처가 준비되면 아래 div 전체를 <img class="project-shot" src="img/파일명.png" alt="IoT 대시보드 화면"> 로 바꾸세요. -->
@@ -217,7 +216,6 @@
       </div>
     </section>
     <!-- 5. 프로젝트 끝 -->
-
 
     <!-- 6. 강의 경력 시작 -->
     <section class="section section-tint" id="career">

@@ -211,16 +211,6 @@ main, .footer { margin-left: var(--sidebar-width); }
 .skill-icon { display: inline-block; color: var(--accent); font-size: 1.35rem; font-weight: 700; }
 .skill-card h3 { margin: 8px 0 17px; }
 
-/* ========================================================
-   6. 프로젝트: 왼쪽 목록 + 오른쪽 미리보기
-   [수정 가이드]
-   - 왼쪽 목록 너비        → .project-split 의 250px
-   - 목록 항목 높이        → .project-tab 의 padding (20px)
-   - 선택된 항목 강조      → .project-tab.is-active
-   - 오른쪽 패널 높이·여백 → .project-pane 의 min-height / padding
-   - 캡처 영역 높이        → .project-shot 의 height (130px)
-   - 버튼 색               → .project-more 의 background
-   ======================================================== */
 .project-split {
   display: grid;
   grid-template-columns: 250px minmax(0, 1fr); /* ← 왼쪽 목록 너비 / 오른쪽은 나머지 */

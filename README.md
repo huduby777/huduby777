@@ -19,7 +19,7 @@
 
 ### 🛠️ 기술 스택
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) 
-![BlockCoding](https://img.shields.io/badge/Blockcoding-F5D042?style=for-the-badge&logo=Blockcoding&logoColor=white&labelColor=white)
+![BlockCoding](https://img.shields.io/badge/Blockcoding-D97706?style=for-the-badge&logo=Blockcoding&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) 
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)  
@@ -29,6 +29,7 @@
 
 ### 🚀 주요 프로젝트
   ----------------------- ----------------------- -----------------------
+  
   📰 AI 뉴스 큐레이션     인공지능을 활용한 뉴스  Python, Streamlit,
                           수집 및 요약 서비스     OpenAI API
   🎮 손글씨 인식 행맨     손글씨를 인식해         Python, TensorFlow
@@ -37,6 +38,7 @@
                           피지컬 컴퓨팅 프로젝트  
   🚌 버스 도착 정보 앱    버스 도착 정보를        Python, Streamlit, TAGO
                           조회하는 애플리케이션   API
+  
   -----------------------------------------------------------------------
   
 ### 📚 관심 분야

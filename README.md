@@ -20,7 +20,6 @@
 ### 🛠️ 기술 스택
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white) ![Robotics](https://img.shields.io/badge/Robotics-FF6F00?style=for-the-badge&logo=Robotics&logoColor=white) ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white) ![Micro:bit](https://img.shields.io/badge/Micro%3Abit-00A3E0?style=for-the-badge&logo=microbit&logoColor=white) ![BlockCoding](https://img.shields.io/badge/Blockcoding-D97706?style=for-the-badge&logo=Blockcoding&logoColor=white) 
 
-### 🚀 주요 프로젝트  
 ### 🚀 주요 프로젝트
 
 | 프로젝트명 | 설명 | 주요 기술 스택 |

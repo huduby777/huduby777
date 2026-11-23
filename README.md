@@ -20,7 +20,6 @@
 ### 🛠️ 기술 스택
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) 
 ![BlockCoding](https://img.shields.io/badge/Blockcoding-D97706?style=for-the-badge&logo=Blockcoding&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) 
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white) 
 ![Robotics](https://img.shields.io/badge/Robotics-FF6F00?style=for-the-badge&logo=Robotics&logoColor=white)  
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white) 

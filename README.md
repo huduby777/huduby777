@@ -30,9 +30,9 @@
 
 | 프로젝트명 | 설명 | 주요 기술 스택 |
 | :--- | :--- | :--- |
-| **📰 AI 뉴스 큐레이션** | 인공지능을 활용한 뉴스 수집 및 요약 서비스 | `Python`, `Streamlit`, `OpenAI API` |
-| **🎮 손글씨 인식 행맨** | 손글씨를 인식해 진행하는 행맨 게임 | `Python`, `TensorFlow` |
-| **🌱 마음 봄** | 라즈베리파이를 활용한 피지컬 컴퓨팅 프로젝트 | `Raspberry Pi` |
+| **🌱 마음 봄** | AI 감정 기록 · 회고 웹앱 프로토 타입 | `Python`,`Streamlit`,`OpenAI API`,`Google Apps Script`, |
+| **📰 AI 뉴스 큐레이션** | 인공지능을 활용한 뉴스 수집 및 요약 서비스 프로토 타입 | `Python`, `Streamlit`, `OpenAI API` |
+| **🎮 손글씨 인식 행맨** | 손글씨를 인식해 진행하는 행맨 게임 | `Python`, `Streamlit`,`Pillow` |
 | **🚌 버스 도착 정보 앱** | 버스 도착 정보를 조회하는 애플리케이션 | `Python`, `Streamlit`, `TAGO API` |
   
 ### 📚 관심 분야

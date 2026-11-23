@@ -21,25 +21,20 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) 
 ![BlockCoding](https://img.shields.io/badge/Blockcoding-D97706?style=for-the-badge&logo=Blockcoding&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) 
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)  
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white) 
+![Robotics](https://img.shields.io/badge/Robotics-FF6F00?style=for-the-badge&logo=Robotics&logoColor=white)  
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white) 
 ![Micro:bit](https://img.shields.io/badge/Micro%3Abit-00A3E0?style=for-the-badge&logo=microbit&logoColor=white)
 
 ### 🚀 주요 프로젝트  
-  ----------------------- ----------------------- -----------------------
-  
-  📰 AI 뉴스 큐레이션     인공지능을 활용한 뉴스  Python, Streamlit,
-                          수집 및 요약 서비스     OpenAI API  
-  🎮 손글씨 인식 행맨     손글씨를 인식해         Python, TensorFlow  
-                          진행하는 행맨 게임        
-  🌱 마음 봄              라즈베리파이를 활용한   Raspberry Pi  
-                          피지컬 컴퓨팅 프로젝트    
-  🚌 버스 도착 정보 앱    버스 도착 정보를        Python, Streamlit, TAGO  
-                          조회하는 애플리케이션   API  
-  
-  -----------------------------------------------------------------------
+### 🚀 주요 프로젝트
+
+| 프로젝트명 | 설명 | 주요 기술 스택 |
+| :--- | :--- | :--- |
+| **📰 AI 뉴스 큐레이션** | 인공지능을 활용한 뉴스 수집 및 요약 서비스 | `Python`, `Streamlit`, `OpenAI API` |
+| **🎮 손글씨 인식 행맨** | 손글씨를 인식해 진행하는 행맨 게임 | `Python`, `TensorFlow` |
+| **🌱 마음 봄** | 라즈베리파이를 활용한 피지컬 컴퓨팅 프로젝트 | `Raspberry Pi` |
+| **🚌 버스 도착 정보 앱** | 버스 도착 정보를 조회하는 애플리케이션 | `Python`, `Streamlit`, `TAGO API` |
   
 ### 📚 관심 분야
 

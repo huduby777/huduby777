@@ -27,7 +27,7 @@
 | **🌱 마음 봄** | AI 감정 기록 · 회고 웹앱 | `Python`,`Streamlit`,`OpenAI API`,`Google Apps Script`, |
 | **📰 AI 뉴스 큐레이션** | 인공지능을 활용한 뉴스 수집 및 요약 서비스 | `Python`, `Streamlit`, `OpenAI API` |
 | **🎮 손글씨 인식 행맨** | 손글씨를 인식해 진행하는 행맨 게임 | `Python`, `Streamlit`,`Pillow` |
-| **🚌 버스 도착 정보 앱** | 버스 도착 정보를 조회 서비스 | `Python`, `Streamlit`, `TAGO API` |
+| **🚌 버스 도착 정보 앱** | 버스 도착 정보를 조회 서비스 | `Python`, `Streamlit`, `TAGO API`,`Arduino` |
   
 ### 📚 관심 분야
 
